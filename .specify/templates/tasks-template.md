@@ -16,7 +16,11 @@ description: "Task list template for feature implementation"
 For AlbionPotionScanner, foundational work should establish the market API
 client, price service, recipe service, and deterministic craft calculator before
 any UI work. Tasks should keep external integrations mockable and preserve
-structured, transparent calculation results.
+structured, transparent calculation results. V1 tasks must use Brecilien as the
+fixed marketplace, crafting city, and sales city through project-wide
+configuration. Do not create tasks for city selection, multi-city optimization,
+arbitrage, transportation cost, Focus optimization, Profit per Focus, or
+automatic Return Rate calculation from city bonuses.
 
 ## Format: `[ID] [P?] [Story] Description`
 

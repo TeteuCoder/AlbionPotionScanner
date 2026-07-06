@@ -42,6 +42,11 @@
 
 - Scope stays limited to potion profitability unless a new specification expands it.
 - All market pricing comes from the Albion Online Data Project through isolated services.
+- V1 uses Brecilien as the fixed operating city for ingredient purchases, crafting,
+  and potion sales. The city is project-wide configuration, not user input.
+- V1 plans must not introduce city selection, multi-city lookup, arbitrage,
+  transportation costs, best-city recommendations, Focus optimization, Profit per
+  Focus, or automatic Return Rate calculation from city bonuses.
 - Calculation logic remains deterministic, testable, and independent from the UI.
 - External integrations are mockable and should avoid duplicated requests through batching or caching.
 - Result data must expose item name, sell price, ingredient cost, crafting fee, marketplace tax,

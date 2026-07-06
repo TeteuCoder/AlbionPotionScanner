@@ -1,13 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: template -> 1.0.0
-- Modified principles: all core principles defined from the template placeholders
-- Added sections: MVP Scope; Delivery & Quality Gates
+- Version change: 1.0.0 -> 1.1.0
+- Modified principles: added V. Fixed Brecilien V1 Operating City; renumbered subsequent principles
+- Added sections: V1 Operating Constraint
 - Removed sections: none
 - Templates requiring updates:
   - updated .specify/templates/plan-template.md
   - updated .specify/templates/spec-template.md
   - updated .specify/templates/tasks-template.md
+  - not present .specify/templates/commands/
 - Deferred items: none
 -->
 # AlbionPotionScanner Constitution
@@ -38,32 +39,39 @@ calls MUST be mockable, and calculation logic MUST be written so it can be
 validated without live network access. New pricing or formula changes require
 tests that prove the expected behavior before release.
 
-### V. Future Extensibility
+### V. Fixed Brecilien V1 Operating City
+Version 1 MUST treat Brecilien as the only marketplace and crafting city.
+Ingredient prices MUST be fetched for Brecilien, crafting MUST be modeled as
+occurring in Brecilien, and crafted potions MUST be valued as sold in
+Brecilien. The operating city MUST be project-wide configuration, not user
+input. The application MUST NOT allow city selection during V1.
+
+### VI. Future Extensibility
 The architecture MUST allow future support for food, bags, weapons, and armor
 without changing the calculation engine. New item categories MUST be introduced
 through isolated adapters or configuration, not by rewriting profit or ROI
 logic. This keeps the calculator stable while the catalog grows.
 
-### VI. Efficient Data Access
+### VII. Efficient Data Access
 The application MUST avoid duplicated API requests and MUST prefer batching and
 caching when those mechanisms reduce redundant market lookups. Performance
 improvements MUST not reduce correctness or transparency. Any cache MUST be
 bounded and MUST not alter the underlying business rules.
 
-### VII. Python Quality Standards
+### VIII. Python Quality Standards
 Implementation MUST use Python type hints, follow PEP 8, and use descriptive
 names. Functions MUST stay focused on a single responsibility. Code that spans
 layers or handles domain rules MUST remain small enough to review and test in
 isolation.
 
-### VIII. MVP Scope Discipline
+### IX. MVP Scope Discipline
 The initial release MUST include only the potion profitability scanner and the
 calculations required to support it: profit, ROI, Material Return Rate,
 crafting station fee, and marketplace tax. Any capability outside this MVP
 scope requires a new specification and constitutional review before
 implementation begins.
 
-### IX. Transparent Results
+### X. Transparent Results
 Every calculated result MUST expose the input values and derived values used in
 the calculation. At minimum, results MUST include item name, sell price,
 ingredient cost, crafting fee, marketplace tax, Material Return Rate, total
@@ -79,11 +87,30 @@ Features outside this scope require explicit approval through a new
 specification.
 
 - Supported items: potions only.
+- Operating city: Brecilien only for ingredient purchase, crafting, and sale.
 - Required outputs: profit, ROI, Material Return Rate, crafting station fee,
   and marketplace tax.
 - Required data source: Albion Online Data Project.
 - Disallowed in the MVP: food, bags, weapons, armor, and non-market-derived
   price assumptions.
+
+## V1 Operating Constraint
+
+V1 answers only this question: "Considering that every step (buying
+ingredients, crafting and selling) happens in Brecilien, which potion is the
+most profitable to craft right now?"
+
+The following features are explicitly out of scope for V1:
+
+- Multiple crafting cities.
+- Different buying and selling cities.
+- Route optimization.
+- Arbitrage between cities.
+- Transportation cost.
+- Best city recommendation.
+- Focus optimization.
+- Profit per Focus.
+- Automatic Return Rate calculation based on city bonuses.
 
 ## Delivery & Quality Gates
 
@@ -120,4 +147,4 @@ Compliance review expectations:
 - The current ratification date is the original adoption date for this
   constitution.
 
-**Version**: 1.0.0 | **Ratified**: 2026-07-02 | **Last Amended**: 2026-07-02
+**Version**: 1.1.0 | **Ratified**: 2026-07-02 | **Last Amended**: 2026-07-06

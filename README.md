@@ -1,7 +1,8 @@
 # AlbionPotionScanner
 
 A market analysis tool for Albion Online that identifies the most profitable
-potions to craft using live market data from the Albion Online Data Project.
+potions to craft in Brecilien using live market data from the Albion Online
+Data Project.
 
 ## Features
 
@@ -11,6 +12,12 @@ potions to craft using live market data from the Albion Online Data Project.
 - Material Return Rate support
 - Crafting fee support
 - Marketplace tax support
+
+## V1 Scope
+
+Version 1 assumes ingredient purchasing, crafting, and potion sales all happen
+in Brecilien. The operating city is project-wide configuration, not a user
+selection.
 
 ## Tech Stack
 

@@ -86,8 +86,11 @@
 -->
 
 For AlbionPotionScanner, requirements MUST explicitly state the market data
-source, calculation inputs, derived outputs, and any scope exclusions. Keep the
-requirements deterministic and traceable to the live Albion Online Data Project.
+source, fixed V1 operating city, calculation inputs, derived outputs, and any
+scope exclusions. V1 MUST use Brecilien for ingredient purchases, crafting, and
+potion sales. Requirements MUST NOT allow city selection or multi-city
+optimization during V1. Keep the requirements deterministic and traceable to
+the live Albion Online Data Project.
 
 ### Functional Requirements
 
@@ -131,6 +134,11 @@ requirements deterministic and traceable to the live Albion Online Data Project.
 
 - Market prices are sourced from the Albion Online Data Project unless the spec
   says otherwise.
+- V1 uses Brecilien as the fixed marketplace, crafting city, and sales city.
+- The operating city is project-wide configuration, not a user-selectable input.
+- Multiple cities, route optimization, arbitrage, transportation cost,
+  best-city recommendation, Focus optimization, Profit per Focus, and automatic
+  Return Rate calculation from city bonuses are out of scope for V1.
 - Any new item category outside potions requires a separate specification.
 - Calculation outputs remain structured so the UI can present them without
   recomputing business rules.
