@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Testing/Cache
+.pytest_cache/
+.specify/
+.agents/
+.system_generated/

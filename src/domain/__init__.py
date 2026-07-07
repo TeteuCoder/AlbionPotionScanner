@@ -1,0 +1,1 @@
+# AlbionPotionScanner domain package

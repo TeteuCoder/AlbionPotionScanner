@@ -1,0 +1,1148 @@
+﻿[
+    {
+        "recipe_id":  "T4_POTION_HEAL",
+        "potion_item_id":  "T4_POTION_HEAL",
+        "potion_name":  "Healing Potion",
+        "family":  "Healing Potion",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T3_EGG",
+                                "item_name":  "Hen Eggs",
+                                "tier":  3,
+                                "quantity":  6
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_HEAL"
+    },
+    {
+        "recipe_id":  "T6_POTION_HEAL",
+        "potion_item_id":  "T6_POTION_HEAL",
+        "potion_name":  "Major Healing Potion",
+        "family":  "Healing Potion",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T5_EGG",
+                                "item_name":  "Goose Eggs",
+                                "tier":  5,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T6_ALCOHOL",
+                                "item_name":  "Potato Schnapps",
+                                "tier":  6,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_HEAL"
+    },
+    {
+        "recipe_id":  "T4_POTION_ENERGY",
+        "potion_item_id":  "T4_POTION_ENERGY",
+        "potion_name":  "Energy Potion",
+        "family":  "Energy Potion",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T4_MILK",
+                                "item_name":  "Goat\u0027s Milk",
+                                "tier":  4,
+                                "quantity":  6
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_ENERGY"
+    },
+    {
+        "recipe_id":  "T6_POTION_ENERGY",
+        "potion_item_id":  "T6_POTION_ENERGY",
+        "potion_name":  "Major Energy Potion",
+        "family":  "Energy Potion",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_MILK",
+                                "item_name":  "Sheep\u0027s Milk",
+                                "tier":  6,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T6_ALCOHOL",
+                                "item_name":  "Potato Schnapps",
+                                "tier":  6,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_ENERGY"
+    },
+    {
+        "recipe_id":  "T5_POTION_REVIVE",
+        "potion_item_id":  "T5_POTION_REVIVE",
+        "potion_name":  "Gigantify Potion",
+        "family":  "Gigantify Potion",
+        "tier":  5,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  12
+                            },
+                            {
+                                "item_id":  "T5_EGG",
+                                "item_name":  "Goose Eggs",
+                                "tier":  5,
+                                "quantity":  6
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T5_POTION_REVIVE"
+    },
+    {
+        "recipe_id":  "T7_POTION_REVIVE",
+        "potion_item_id":  "T7_POTION_REVIVE",
+        "potion_name":  "Major Gigantify Potion",
+        "family":  "Gigantify Potion",
+        "tier":  7,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T5_EGG",
+                                "item_name":  "Goose Eggs",
+                                "tier":  5,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T7_POTION_REVIVE"
+    },
+    {
+        "recipe_id":  "T5_POTION_STONESKIN",
+        "potion_item_id":  "T5_POTION_STONESKIN",
+        "potion_name":  "Resistance Potion",
+        "family":  "Resistance Potion",
+        "tier":  5,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  12
+                            },
+                            {
+                                "item_id":  "T4_MILK",
+                                "item_name":  "Goat\u0027s Milk",
+                                "tier":  4,
+                                "quantity":  6
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T5_POTION_STONESKIN"
+    },
+    {
+        "recipe_id":  "T7_POTION_STONESKIN",
+        "potion_item_id":  "T7_POTION_STONESKIN",
+        "potion_name":  "Major Resistance Potion",
+        "family":  "Resistance Potion",
+        "tier":  7,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T6_MILK",
+                                "item_name":  "Sheep\u0027s Milk",
+                                "tier":  6,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T7_POTION_STONESKIN"
+    },
+    {
+        "recipe_id":  "T5_POTION_SLOWFIELD",
+        "potion_item_id":  "T5_POTION_SLOWFIELD",
+        "potion_name":  "Sticky Potion",
+        "family":  "Sticky Potion",
+        "tier":  5,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  12
+                            },
+                            {
+                                "item_id":  "T4_MILK",
+                                "item_name":  "Goat\u0027s Milk",
+                                "tier":  4,
+                                "quantity":  6
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T5_POTION_SLOWFIELD"
+    },
+    {
+        "recipe_id":  "T7_POTION_SLOWFIELD",
+        "potion_item_id":  "T7_POTION_SLOWFIELD",
+        "potion_name":  "Major Sticky Potion",
+        "family":  "Sticky Potion",
+        "tier":  7,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T5_EGG",
+                                "item_name":  "Goose Eggs",
+                                "tier":  5,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T7_POTION_SLOWFIELD"
+    },
+    {
+        "recipe_id":  "T4_POTION_COOLDOWN",
+        "potion_item_id":  "T4_POTION_COOLDOWN",
+        "potion_name":  "Minor Poison Potion",
+        "family":  "Poison Potion",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  8
+                            },
+                            {
+                                "item_id":  "T3_COMFREY",
+                                "item_name":  "Brightleaf Comfrey",
+                                "tier":  3,
+                                "quantity":  4
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_COOLDOWN"
+    },
+    {
+        "recipe_id":  "T6_POTION_COOLDOWN",
+        "potion_item_id":  "T6_POTION_COOLDOWN",
+        "potion_name":  "Poison Potion",
+        "family":  "Poison Potion",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  12
+                            },
+                            {
+                                "item_id":  "T3_COMFREY",
+                                "item_name":  "Brightleaf Comfrey",
+                                "tier":  3,
+                                "quantity":  12
+                            },
+                            {
+                                "item_id":  "T6_MILK",
+                                "item_name":  "Sheep\u0027s Milk",
+                                "tier":  6,
+                                "quantity":  6
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_COOLDOWN"
+    },
+    {
+        "recipe_id":  "T8_POTION_COOLDOWN",
+        "potion_item_id":  "T8_POTION_COOLDOWN",
+        "potion_name":  "Major Poison Potion",
+        "family":  "Poison Potion",
+        "tier":  8,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T8_YARROW",
+                                "item_name":  "Ghoul Yarrow",
+                                "tier":  8,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T8_MILK",
+                                "item_name":  "Cow\u0027s Milk",
+                                "tier":  8,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T8_ALCOHOL",
+                                "item_name":  "Pumpkin Moonshine",
+                                "tier":  8,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T8_POTION_COOLDOWN"
+    },
+    {
+        "recipe_id":  "T8_POTION_CLEANSE",
+        "potion_item_id":  "T8_POTION_CLEANSE",
+        "potion_name":  "Invisibility Potion",
+        "family":  "Invisibility Potion",
+        "tier":  8,
+        "enchantment_level":  0,
+        "output_quantity":  5,
+        "ingredients":  [
+                            {
+                                "item_id":  "T8_YARROW",
+                                "item_name":  "Ghoul Yarrow",
+                                "tier":  8,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T8_MILK",
+                                "item_name":  "Cow\u0027s Milk",
+                                "tier":  8,
+                                "quantity":  18
+                            },
+                            {
+                                "item_id":  "T8_ALCOHOL",
+                                "item_name":  "Pumpkin Moonshine",
+                                "tier":  8,
+                                "quantity":  18
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T8_POTION_CLEANSE"
+    },
+    {
+        "recipe_id":  "T5_POTION_MOB_RESET",
+        "potion_item_id":  "T5_POTION_MOB_RESET",
+        "potion_name":  "Calming Potion",
+        "family":  "Calming Potion",
+        "tier":  5,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_PANTHER",
+                                "item_name":  "Fine Shadow Claws",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T2_AGARIC",
+                                "item_name":  "Arcane Agaric",
+                                "tier":  2,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T5_POTION_MOB_RESET"
+    },
+    {
+        "recipe_id":  "T7_POTION_MOB_RESET",
+        "potion_item_id":  "T7_POTION_MOB_RESET",
+        "potion_name":  "Major Calming Potion",
+        "family":  "Calming Potion",
+        "tier":  7,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_PANTHER",
+                                "item_name":  "Excellent Shadow Claws",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T3_COMFREY",
+                                "item_name":  "Brightleaf Comfrey",
+                                "tier":  3,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T2_AGARIC",
+                                "item_name":  "Arcane Agaric",
+                                "tier":  2,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T7_POTION_MOB_RESET"
+    },
+    {
+        "recipe_id":  "T5_POTION_CLEANSE2",
+        "potion_item_id":  "T5_POTION_CLEANSE2",
+        "potion_name":  "Cleansing Potion",
+        "family":  "Cleansing Potion",
+        "tier":  5,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_ENT",
+                                "item_name":  "Fine Sylvian Root",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T3_COMFREY",
+                                "item_name":  "Brightleaf Comfrey",
+                                "tier":  3,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T4_BUTTER",
+                                "item_name":  "Goat\u0027s Butter",
+                                "tier":  4,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T5_POTION_CLEANSE2"
+    },
+    {
+        "recipe_id":  "T7_POTION_CLEANSE2",
+        "potion_item_id":  "T7_POTION_CLEANSE2",
+        "potion_name":  "Major Cleansing Potion",
+        "family":  "Cleansing Potion",
+        "tier":  7,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_ENT",
+                                "item_name":  "Excellent Sylvian Root",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T3_COMFREY",
+                                "item_name":  "Brightleaf Comfrey",
+                                "tier":  3,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_BUTTER",
+                                "item_name":  "Sheep\u0027s Butter",
+                                "tier":  6,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T7_POTION_CLEANSE2"
+    },
+    {
+        "recipe_id":  "T5_POTION_ACID",
+        "potion_item_id":  "T5_POTION_ACID",
+        "potion_name":  "Acid Potion",
+        "family":  "Acid Potion",
+        "tier":  5,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_DIREBEAR",
+                                "item_name":  "Fine Spirit Paws",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T4_MILK",
+                                "item_name":  "Goat\u0027s Milk",
+                                "tier":  4,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T5_POTION_ACID"
+    },
+    {
+        "recipe_id":  "T7_POTION_ACID",
+        "potion_item_id":  "T7_POTION_ACID",
+        "potion_name":  "Major Acid Potion",
+        "family":  "Acid Potion",
+        "tier":  7,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_DIREBEAR",
+                                "item_name":  "Excellent Spirit Paws",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_ALCOHOL",
+                                "item_name":  "Potato Schnapps",
+                                "tier":  6,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_MILK",
+                                "item_name":  "Sheep\u0027s Milk",
+                                "tier":  6,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T7_POTION_ACID"
+    },
+    {
+        "recipe_id":  "T4_POTION_BERSERK",
+        "potion_item_id":  "T4_POTION_BERSERK",
+        "potion_name":  "Minor Berserk Potion",
+        "family":  "Berserk Potion",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T3_ALCHEMY_RARE_WEREWOLF",
+                                "item_name":  "Rugged Werewolf Fangs",
+                                "tier":  3,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  16
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_BERSERK"
+    },
+    {
+        "recipe_id":  "T6_POTION_BERSERK",
+        "potion_item_id":  "T6_POTION_BERSERK",
+        "potion_name":  "Berserk Potion",
+        "family":  "Berserk Potion",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_WEREWOLF",
+                                "item_name":  "Fine Werewolf Fangs",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T2_AGARIC",
+                                "item_name":  "Arcane Agaric",
+                                "tier":  2,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T6_ALCOHOL",
+                                "item_name":  "Potato Schnapps",
+                                "tier":  6,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_BERSERK"
+    },
+    {
+        "recipe_id":  "T8_POTION_BERSERK",
+        "potion_item_id":  "T8_POTION_BERSERK",
+        "potion_name":  "Major Berserk Potion",
+        "family":  "Berserk Potion",
+        "tier":  8,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_WEREWOLF",
+                                "item_name":  "Excellent Werewolf Fangs",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T8_YARROW",
+                                "item_name":  "Ghoul Yarrow",
+                                "tier":  8,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T3_COMFREY",
+                                "item_name":  "Brightleaf Comfrey",
+                                "tier":  3,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_ALCOHOL",
+                                "item_name":  "Potato Schnapps",
+                                "tier":  6,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T8_ALCOHOL",
+                                "item_name":  "Pumpkin Moonshine",
+                                "tier":  8,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T8_POTION_BERSERK"
+    },
+    {
+        "recipe_id":  "T4_POTION_LAVA",
+        "potion_item_id":  "T4_POTION_LAVA",
+        "potion_name":  "Minor Hellfire Potion",
+        "family":  "Hellfire Potion",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T3_ALCHEMY_RARE_IMP",
+                                "item_name":  "Rugged Imp\u0027s Horn",
+                                "tier":  3,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T4_MILK",
+                                "item_name":  "Goat\u0027s Milk",
+                                "tier":  4,
+                                "quantity":  16
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_LAVA"
+    },
+    {
+        "recipe_id":  "T6_POTION_LAVA",
+        "potion_item_id":  "T6_POTION_LAVA",
+        "potion_name":  "Hellfire Potion",
+        "family":  "Hellfire Potion",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_IMP",
+                                "item_name":  "Fine Imp\u0027s Horn",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T6_MILK",
+                                "item_name":  "Sheep\u0027s Milk",
+                                "tier":  6,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T3_EGG",
+                                "item_name":  "Hen Eggs",
+                                "tier":  3,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_LAVA"
+    },
+    {
+        "recipe_id":  "T8_POTION_LAVA",
+        "potion_item_id":  "T8_POTION_LAVA",
+        "potion_name":  "Major Hellfire Potion",
+        "family":  "Hellfire Potion",
+        "tier":  8,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_IMP",
+                                "item_name":  "Excellent Imp\u0027s Horn",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T8_MILK",
+                                "item_name":  "Cow\u0027s Milk",
+                                "tier":  8,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T8_YARROW",
+                                "item_name":  "Ghoul Yarrow",
+                                "tier":  8,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T5_EGG",
+                                "item_name":  "Goose Eggs",
+                                "tier":  5,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T8_ALCOHOL",
+                                "item_name":  "Pumpkin Moonshine",
+                                "tier":  8,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T8_POTION_LAVA"
+    },
+    {
+        "recipe_id":  "T4_POTION_GATHER",
+        "potion_item_id":  "T4_POTION_GATHER",
+        "potion_name":  "Minor Gathering Potion",
+        "family":  "Gathering Potion",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T3_ALCHEMY_RARE_ELEMENTAL",
+                                "item_name":  "Rugged Runestone Tooth",
+                                "tier":  3,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T4_BUTTER",
+                                "item_name":  "Goat\u0027s Butter",
+                                "tier":  4,
+                                "quantity":  16
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_GATHER"
+    },
+    {
+        "recipe_id":  "T6_POTION_GATHER",
+        "potion_item_id":  "T6_POTION_GATHER",
+        "potion_name":  "Gathering Potion",
+        "family":  "Gathering Potion",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_ELEMENTAL",
+                                "item_name":  "Fine Runestone Tooth",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T6_BUTTER",
+                                "item_name":  "Sheep\u0027s Butter",
+                                "tier":  6,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_GATHER"
+    },
+    {
+        "recipe_id":  "T8_POTION_GATHER",
+        "potion_item_id":  "T8_POTION_GATHER",
+        "potion_name":  "Major Gathering Potion",
+        "family":  "Gathering Potion",
+        "tier":  8,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_ELEMENTAL",
+                                "item_name":  "Excellent Runestone Tooth",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T8_BUTTER",
+                                "item_name":  "Cow\u0027s Butter",
+                                "tier":  8,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T8_YARROW",
+                                "item_name":  "Ghoul Yarrow",
+                                "tier":  8,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T8_ALCOHOL",
+                                "item_name":  "Pumpkin Moonshine",
+                                "tier":  8,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T8_POTION_GATHER"
+    },
+    {
+        "recipe_id":  "T4_POTION_TORNADO",
+        "potion_item_id":  "T4_POTION_TORNADO",
+        "potion_name":  "Minor Tornado in a Bottle",
+        "family":  "Tornado in a Bottle",
+        "tier":  4,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T3_ALCHEMY_RARE_EAGLE",
+                                "item_name":  "Rugged Dawnfeather",
+                                "tier":  3,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T4_BURDOCK",
+                                "item_name":  "Crenellated Burdock",
+                                "tier":  4,
+                                "quantity":  16
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T4_POTION_TORNADO"
+    },
+    {
+        "recipe_id":  "T6_POTION_TORNADO",
+        "potion_item_id":  "T6_POTION_TORNADO",
+        "potion_name":  "Tornado in a Bottle",
+        "family":  "Tornado in a Bottle",
+        "tier":  6,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T5_ALCHEMY_RARE_EAGLE",
+                                "item_name":  "Fine Dawnfeather",
+                                "tier":  5,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T6_FOXGLOVE",
+                                "item_name":  "Elusive Foxglove",
+                                "tier":  6,
+                                "quantity":  48
+                            },
+                            {
+                                "item_id":  "T5_TEASEL",
+                                "item_name":  "Dragon Teasel",
+                                "tier":  5,
+                                "quantity":  24
+                            },
+                            {
+                                "item_id":  "T3_EGG",
+                                "item_name":  "Hen Eggs",
+                                "tier":  3,
+                                "quantity":  12
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T6_POTION_TORNADO"
+    },
+    {
+        "recipe_id":  "T8_POTION_TORNADO",
+        "potion_item_id":  "T8_POTION_TORNADO",
+        "potion_name":  "Major Tornado in a Bottle",
+        "family":  "Tornado in a Bottle",
+        "tier":  8,
+        "enchantment_level":  0,
+        "output_quantity":  10,
+        "ingredients":  [
+                            {
+                                "item_id":  "T7_ALCHEMY_RARE_EAGLE",
+                                "item_name":  "Excellent Dawnfeather",
+                                "tier":  7,
+                                "quantity":  1
+                            },
+                            {
+                                "item_id":  "T8_YARROW",
+                                "item_name":  "Ghoul Yarrow",
+                                "tier":  8,
+                                "quantity":  144
+                            },
+                            {
+                                "item_id":  "T7_MULLEIN",
+                                "item_name":  "Firetouched Mullein",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T7_ALCOHOL",
+                                "item_name":  "Corn Hooch",
+                                "tier":  7,
+                                "quantity":  72
+                            },
+                            {
+                                "item_id":  "T5_EGG",
+                                "item_name":  "Goose Eggs",
+                                "tier":  5,
+                                "quantity":  36
+                            },
+                            {
+                                "item_id":  "T8_ALCOHOL",
+                                "item_name":  "Pumpkin Moonshine",
+                                "tier":  8,
+                                "quantity":  36
+                            }
+                        ],
+        "source_reference":  "docs/research/ingredients-for-each-potion.md#T8_POTION_TORNADO"
+    }
+]
