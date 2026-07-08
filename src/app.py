@@ -13,7 +13,8 @@ from src.clients.albion_data_client import AlbionDataClient, AlbionDataClientExc
 from src.services.price_service import PriceService, PotionSaleStrategy, PriceServiceError
 from src.services.craft_calculator import CraftCalculator
 from src.services.potion_scanner import PotionScanner
-from src.domain.models import CalculationParameters, ProfitCalculation, ScanResult
+from src.services.mastery_service import MasteryService
+from src.domain.models import CalculationParameters, ProfitCalculation, ScanResult, PlayerMastery
 
 # Configuração da Página do Streamlit
 st.set_page_config(
@@ -277,6 +278,146 @@ if calculations and any(c.profit > Decimal("0") for c in calculations):
     
     sorted_calcs = sorted(calculations, key=sort_key)
     best_calc = sorted_calcs[0]
+
+# --- ESPECIALIZAÇÃO (MASTERY) BAR ---
+mastery_service = MasteryService(file_path="data/player-mastery.json", recipe_repository=repo)
+if "masteries" not in st.session_state:
+    st.session_state.masteries = mastery_service.load_mastery()
+
+st.markdown("### 🏆 Especialização de Criação (Mastery)")
+
+# Estilos customizados para os cards de maestria
+st.markdown("""
+    <style>
+    /* Estilizar a caixa de container com borda do Streamlit como um card real */
+    div[data-testid="stVerticalBlockBorderWrapper"] {
+        background: linear-gradient(135deg, #1e293b, #0f172a) !important;
+        border: 1px solid #334155 !important;
+        border-radius: 12px !important;
+        padding: 10px 8px !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25) !important;
+        margin-bottom: 12px !important;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    
+    div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+        border-color: #3b82f6 !important;
+        transform: translateY(-2px);
+    }
+
+    /* Centralizar e ajustar o number input dentro do card */
+    div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stNumberInput"] {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Forçar todos os wrappers gerados pelo widget do Streamlit no card a serem transparentes e sem borda */
+    div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stNumberInput"] div,
+    div[data-testid="stVerticalBlockBorderWrapper"] div[data-baseweb="base-input"],
+    div[data-testid="stVerticalBlockBorderWrapper"] div[data-baseweb="input"] {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Estilizar a caixa de entrada de número de maestria para ser minimalista e transparente */
+    div[data-testid="stVerticalBlockBorderWrapper"] input {
+        text-align: right !important;
+        font-weight: 700 !important;
+        font-size: 15px !important;
+        background-color: transparent !important;
+        color: #f8fafc !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Esconder botões de mais/menos do number_input no card */
+    div[data-testid="stVerticalBlockBorderWrapper"] button {
+        display: none !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Coletar poções únicas dos dados carregados
+unique_potions = {}
+for r in recipes:
+    if r.potion_item_id not in unique_potions:
+        unique_potions[r.potion_item_id] = r.potion_name
+
+# Renderização do grid horizontal (8 colunas)
+cols = st.columns(8)
+fallback_svg = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><rect width='64' height='64' fill='%231e293b' rx='8' stroke='%23334155'/><text x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='32' fill='%2394a3b8'>🧪</text></svg>"
+
+for i, (item_id, name) in enumerate(unique_potions.items()):
+    col = cols[i % 8]
+    m_level = st.session_state.masteries.get(item_id, PlayerMastery(item_id, 0)).mastery_level
+    img_url = f"https://render.albiononline.com/v1/item/{item_id}.png"
+    
+    with col:
+        with st.container(border=True):
+            st.markdown(f"""
+                <div style="text-align: center; margin-bottom: 4px;" title="{name}">
+                    <img src="{img_url}" onerror="this.onerror=null; this.src='{fallback_svg}';" width="64" height="64" style="object-fit: contain; margin: 0 auto; display: block;"/>
+                </div>
+            """, unsafe_allow_html=True)
+            
+            # Subcolunas para alinhar a caixa minimalista de input com o texto /100 (tamanho reduzido para a entrada)
+            sub_col1, sub_col2 = st.columns([3, 4])
+            
+            with sub_col1:
+                # Entrada direta de nível
+                new_val = st.number_input(
+                    label=f"Especialização de {name}",
+                    min_value=0,
+                    max_value=100,
+                    value=m_level,
+                    step=1,
+                    key=f"card_input_{item_id}",
+                    label_visibility="collapsed"
+                )
+            
+            with sub_col2:
+                # Texto fixo de cap
+                st.markdown(
+                    '<div style="font-size: 15px; font-weight: 700; color: #64748b; line-height: 38px; text-align: left;">/100</div>',
+                    unsafe_allow_html=True
+                )
+            
+            # Barra de progresso visual
+            st.markdown(f"""
+                <div style="background: #334155; border-radius: 4px; height: 6px; margin-top: 4px; margin-bottom: 8px; overflow: hidden; width: 100%;">
+                    <div style="background: linear-gradient(90deg, #3b82f6, #10b981); width: {new_val}%; height: 100%;"></div>
+                </div>
+            """, unsafe_allow_html=True)
+            
+            if new_val != m_level:
+                clamped = max(0, min(100, int(new_val)))
+                mastery_service.save_mastery(item_id, clamped)
+                st.session_state.masteries[item_id] = PlayerMastery(item_id, clamped)
+                st.rerun()
+
+# Painel expander de controle para atualizar os valores de especialização
+with st.expander("⚙️ Gerenciar Especializações (Mastery)"):
+    sorted_names = sorted(unique_potions.keys(), key=lambda k: unique_potions[k])
+    options_map = {unique_potions[k]: k for k in sorted_names}
+    
+    selected_potion_name = st.selectbox("Selecione a Poção para Ajustar", options=list(options_map.keys()))
+    selected_potion_id = options_map[selected_potion_name]
+    
+    current_level = st.session_state.masteries.get(selected_potion_id, PlayerMastery(selected_potion_id, 0)).mastery_level
+    new_level = st.number_input("Nível de Especialização (0-100)", min_value=0, max_value=100, value=current_level, step=1, key=f"number_input_{selected_potion_id}")
+    
+    if new_level is not None:
+        if new_level != current_level:
+            clamped = max(0, min(100, int(new_level)))
+            mastery_service.save_mastery(selected_potion_id, clamped)
+            st.session_state.masteries[selected_potion_id] = PlayerMastery(selected_potion_id, clamped)
+            st.rerun()
+
+st.markdown("---")
 
 # --- PAINEL DE METRICAS KPI ---
 kpi_col1, kpi_col2, kpi_col3, kpi_col4 = st.columns(4)

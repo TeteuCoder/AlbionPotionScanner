@@ -12,3 +12,6 @@ ENV/
 .specify/
 .agents/
 .system_generated/
+
+# Local data state
+data/player-mastery.json

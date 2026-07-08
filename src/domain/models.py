@@ -298,3 +298,15 @@ class ScanResult:
                 raise ValueError("warnings cannot contain empty values")
 
 
+@dataclass(frozen=True)
+class PlayerMastery:
+    potion_item_id: str
+    mastery_level: int
+
+    def validate(self) -> None:
+        if not self.potion_item_id:
+            raise ValueError("potion_item_id cannot be empty")
+        if not (0 <= self.mastery_level <= 100):
+            raise ValueError("mastery_level must be between 0 and 100 inclusive")
+
+
